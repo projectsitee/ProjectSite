@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d55696-0639-484d-bb89-1c8160173af5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/icon/icons8-eye-50.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Dashboard/GeneralInformation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/RecordOrder.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/TrackingOrders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +66,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="409">
+              <caret line="34" column="40" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="34" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -178,10 +166,10 @@
         <option value="$PROJECT_DIR$/app/Orders.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/resources/views/Orders/TrackingOrders.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php" />
       </list>
     </option>
   </component>
@@ -471,12 +459,20 @@
       <workItem from="1554892742720" duration="4480000" />
       <workItem from="1554897288674" duration="508000" />
       <workItem from="1554897859100" duration="642000" />
-      <workItem from="1554898562977" duration="691000" />
+      <workItem from="1554898562977" duration="1158000" />
     </task>
+    <task id="LOCAL-00001" summary="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order">
+      <created>1554899478819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1554899478819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47120000" />
+    <option name="totallyTimeSpent" value="47587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -505,6 +501,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -818,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="409">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="34" selection-end-column="40" />
         </state>
       </provider>
     </entry>

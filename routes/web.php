@@ -19,3 +19,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/AddMember', 'AddMemberController@index');
+Route::resource('Order', 'OrdersController');
+Route::resource('Dashboard', 'DashboardController');
+

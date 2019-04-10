@@ -20,6 +20,12 @@ class User extends Authenticatable
         'NameCompany','State','City','PostalCode',
         'PostalAdderss','UserName','email', 'password',
     ];
+    public function orders()
+    {
+        return $this->belongsToMany(Orders::class);
+
+
+    }
 
     /**
      * The attributes that should be hidden for arrays.

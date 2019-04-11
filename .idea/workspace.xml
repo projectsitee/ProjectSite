@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39d55696-0639-484d-bb89-1c8160173af5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/OrderToSend.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/RequestsSubmitted.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/Unpaid.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Orders/ViewAndEdit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Profile/ChangePassword.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/Profile/Profile.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_10_045521_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Dashboard/GeneralInformation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Dashboard/GeneralInformation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/Orders/TrackingOrders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Orders/TrackingOrders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -508,7 +496,7 @@
       <workItem from="1554969914257" duration="2273000" />
       <workItem from="1554972345308" duration="500000" />
       <workItem from="1554972914890" duration="94000" />
-      <workItem from="1554973106088" duration="112000" />
+      <workItem from="1554973106088" duration="441000" />
     </task>
     <task id="LOCAL-00001" summary="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order">
       <created>1554899478819</created>
@@ -531,15 +519,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554899805916</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ارتباط بین جدول کاربر و خرید&#10;تکمیل شدن منوی اطلاعات کاربردی&#10;تکمیل شدن منوی داشبورد&#10;پایان روز چهارشنبه">
+      <created>1554973506145</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1554973506145</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65733000" />
+    <option name="totallyTimeSpent" value="66062000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -554,7 +548,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4509804" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4509804" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -567,7 +561,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create BackEnd And FrontEnd Order&#10;Create FrontEnd Dashboard&#10;Create Relationship Tbl User And Order" />
+    <MESSAGE value="ارتباط بین جدول کاربر و خرید&#10;تکمیل شدن منوی اطلاعات کاربردی&#10;تکمیل شدن منوی داشبورد&#10;پایان روز چهارشنبه" />
+    <option name="LAST_COMMIT_MESSAGE" value="ارتباط بین جدول کاربر و خرید&#10;تکمیل شدن منوی اطلاعات کاربردی&#10;تکمیل شدن منوی داشبورد&#10;پایان روز چهارشنبه" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access/AuthorizesRequests.php">

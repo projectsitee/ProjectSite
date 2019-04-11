@@ -133,7 +133,7 @@
                             <li class="external">
                                 <h3>
                                     <span class="bold">0</span> اعلانها</h3>
-                                <a href="page_user_profile_1.html">مشاهده همه</a>
+                                <a href="#">مشاهده همه</a>
                             </li>
                             <li>
                                 <ul class="dropdown-menu-list scroller" style="height: 250px;"
@@ -183,13 +183,13 @@
                                     <i class="icon-user"></i> پروفایل من </a>
                             </li>
                             <li>
-                                <a href="app_inbox.html">
+                                <a href="#">
                                     <i class="icon-envelope-open"></i> صندوق پیام ها
                                     <span class="badge badge-danger"> 0 </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="app_todo.html">
+                                <a href="#">
                                     <i class="icon-rocket"></i> اعلانها
                                     <span class="badge badge-success"> 0 </span>
                                 </a>
@@ -296,22 +296,22 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="nav-item  ">
-                                <a href="portlet_boxed.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">شارژ انلاین</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="portlet_light.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">ثبت حواله بانکی</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="portlet_solid.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">پیگیری حواله ها</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="portlet_ajax.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">گردش مالی</span>
                                 </a>
                             </li>

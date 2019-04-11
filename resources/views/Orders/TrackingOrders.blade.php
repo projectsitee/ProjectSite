@@ -39,27 +39,28 @@
                     </thead>
                     <tbody>
                     @foreach($order as $orde)
+                        @if($orde->user_id == auth()->user()->id)
 
                         <tr>
-                            <td>{{$orde->id}}</td>
+                            <td style="color: red">#</td>
                             <td><img src="{{$orde->FrontImage}}" width="20" height="20"></td>
                             <td>{{$orde->Product}}/{{$orde->Paperback}}</td>
                             <td>{{$orde->Size}}</td>
                             <td>{{$orde->InvoiceNumber}}</td>
                             <td>{{$orde->Circulation}}</td>
                             <td> <span
-                                        class="label label-sm label-success">نامشخض</span>
+                                        class="label label-sm label-danger">نامشخض</span>
                             </td>
 
                             <td>{{Verta::instance($orde->created_at)->format('Y-n-j')}}</td>
                             <td><span
-                                        class="label label-sm label-success">نامشخض</span></td>
+                                        class="label label-sm label-danger">نامشخض</span></td>
                             <td><span
-                                        class="label label-sm label-success">نامشخض</span></td>
+                                        class="label label-sm label-danger">نامشخض</span></td>
                             <td><span
-                                        class="label label-sm label-success">نامشخض</span></td>
+                                        class="label label-sm label-danger">نامشخض</span></td>
 
-                                <td><a href="{{url('/#')}}"><img
+                                <td><a href="{{url('/ViewAndEdit')}}/{{$orde->id}}"><img
                                 src="{{asset('/icon/icons8-eye-50.png')}}"
                                 title="مشاهده و ویرایش" width="20" height="20"></a>
 
@@ -70,9 +71,15 @@
                                 {{--<a href="#"><img src="{{asset('/icon/check.png')}}"--}}
                                 {{--title="پرداخت شده"></a>--}}
                             </td>
+                            {{--@else--}}
+                                {{--<td> <span--}}
+                                            {{--class="label label-sm label-danger">خریدی برای شما در سیستم ثبت نشده است</span>--}}
+                                {{--</td>--}}
+
 
                         </tr>
                     </tbody>
+                    @endif
                     @endforeach
                 </table>
 

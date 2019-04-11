@@ -212,6 +212,7 @@
         </div>
     </div>
     <div class="clearfix"></div>
+
     <div class="page-container">
         <div class="page-sidebar-wrapper">
             <div class="page-sidebar navbar-collapse collapse">
@@ -240,22 +241,22 @@
 
 
                             <li class="nav-item  ">
-                                <a href="form_controls.html" class="nav-link ">
+                                <a href="{{asset('/Unpaid')}}" class="nav-link ">
                                     <span class="title">پرداخت نشده</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="form_controls_md.html" class="nav-link ">
+                                <a href="{{asset('/OrderToSend')}}" class="nav-link ">
                                     <span class="title">سفارشات اماده به ارسال</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="form_validation.html" class="nav-link ">
+                                <a href="{{asset('/RequestsSubmitted')}}" class="nav-link ">
                                     <span class="title">درخواست های ارسال شده</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="form_validation_states_md.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">آرشیو پیام</span>
                                 </a>
                             </li>
@@ -324,12 +325,12 @@
                         </a>
                         <ul class="sub-menu">
                             <li class="nav-item  ">
-                                <a href="layout_blank_page.html" class="nav-link ">
+                                <a href="{{asset('/Profile')}}/{{auth()->user()->id}}" class="nav-link ">
                                     <span class="title">پروفایل من</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="layout_ajax_page.html" class="nav-link ">
+                                <a href="{{asset('/ChangePassword')}}" class="nav-link ">
                                     <span class="title">تغییر کلمه عبور</span>
                                 </a>
                             </li>
@@ -360,7 +361,16 @@
 
                     </ul>
 
+                    <div class="page-toolbar">
+                    <br/>
+                        <br/>
+                        <span>{{Verta::instance(time())->format('Y-n-j')}}  امروز</span>
 
+
+
+
+
+                    </div>
 
 
                 </div>

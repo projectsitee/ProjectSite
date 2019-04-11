@@ -28,12 +28,6 @@ class CreateOrdersTable extends Migration
             $table->string('InvoiceNumber')->unique();
             $table->timestamps();
 
-            $table->foreign('user_id')
-                ->references('id')
-                ->on('users')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
-
         });
 
     }

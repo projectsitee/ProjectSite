@@ -10,7 +10,6 @@
     @endif
     <div class="row">
         <div class="col-md-12">
-            <!-- BEGIN VALIDATION STATES-->
             <div class="portlet light portlet-fit portlet-form bordered">
                 <div class="portlet-title">
                     <div class="caption">
@@ -19,14 +18,11 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <!-- BEGIN FORM-->
                     <form action="{{url('/UpdateProfile')}}/{{$user->id}}" method="post" id="form_sample_1"
                           class="form-horizontal"
                           enctype="multipart/form-data">
                         {{csrf_field()}}
                         {{method_field('PATCH')}}
-
-
                         <div class="form-body">
                             <div class="form-group">
                                 <label class="control-label col-md-3">نام
@@ -130,7 +126,6 @@
                                            value="{{$user->PostalCode}}"/>
                                 </div>
                             </div>
-
                             <div class="form-actions">
                                 <div class="row">
                                     <div class="col-md-offset-3 col-md-9">
@@ -141,13 +136,9 @@
                             </div>
                         </div>
                     </form>
-                    <!-- END FORM-->
+
                 </div>
             </div>
-            <!-- END VALIDATION STATES-->
         </div>
     </div>
-
-
-
 @endsection

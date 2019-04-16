@@ -22,7 +22,7 @@ class User extends Authenticatable
     ];
     public function orders()
     {
-        return $this->hasMany(Orders::class,'user_id','id');
+        return $this->hasMany(Orders::class,'user_id');
 
 
     }

@@ -4,10 +4,8 @@
     <hr>
     <div class="row">
         <div class="col-md-12">
-            <!-- BEGIN VALIDATION STATES-->
             <div class="portlet light portlet-fit portlet-form bordered">
                 <div class="portlet-body">
-                    <!-- BEGIN FORM-->
                     <form action="{{url('/Order')}}" method="post" id="form_sample_1" class="form-horizontal"
                           enctype="multipart/form-data">
                         {{csrf_field()}}
@@ -47,10 +45,8 @@
                             </div>
                         </div>
                     </form>
-                    <!-- END FORM-->
                 </div>
             </div>
-            <!-- END VALIDATION STATES-->
         </div>
     </div>
 @endsection

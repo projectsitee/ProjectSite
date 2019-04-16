@@ -22,7 +22,6 @@
 5-درخواست ارسال بار شهرستان از شنبه تا چهارشنبه تا ساعت 15:30 و پنجشنبه تا 13 می باشد.
     </span>
     <br/>
-
     <span>
 6-مشتریان و همکاران گرامی درهنگام دریافت بسته های ارسالی از باربری و ترمینال دقت فرمایید درصورت هرگونه خرابی در جابجایی(آب خوردگی،روغنی،پارگی و...) به عهده این مجموعه نمی باشد.
     </span>
@@ -31,10 +30,9 @@
     <span style="color: red">
        توجه: ثبت درخواست ارسال از ساعت 16:15 تا ساعت 16:30 امكان پذير نمی باشد
     </span>
-<br/>
+    <br/>
     <br/>
     <div class="form-group">
-
         <div class="col-md-4">
             نوع ارسال
             <select class="form-control" name="PaperHeat">
@@ -50,14 +48,10 @@
     </div>
     <br/>
     <br/>
-
     <div class="portlet box blue ">
-
         <div class="portlet-body form ">
-
             <div class="form-body ">
                 <br/>
-
                 <table class="table table-hover table-bordered results">
                     <thead>
                     <tr>
@@ -76,12 +70,10 @@
                         <th>طراحی</th>
                         <th>مبلغ کل</th>
                     </tr>
-
                     </thead>
                     <tbody>
                     {{--@foreach($order as $orde)--}}
                     {{--@if($orde->user_id == auth()->user()->id)--}}
-
                     <tr>
                         <td></td>
                         <td></td>
@@ -92,23 +84,10 @@
                         <td></td>
                         <td></td>
                     </tr>
-
                     </tbody>
-
                 </table>
-
-                <!-- END EXAMPLE TABLE PORTLET-->
-
-
-                <!-- BEGIN EXAMPLE TABLE PORTLET-->
                 <button type="submit" class="btn green">ثبت اطلاعات</button>
             </div>
         </div>
-
     </div>
-
-
-
-
-
 @endsection

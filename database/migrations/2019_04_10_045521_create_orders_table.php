@@ -15,7 +15,7 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('user_id')->unsigned();
+            $table->integer('user_id')->unsigned()->index();
             $table->string('Product');
             $table->string('Paperback');
             $table->string('PaperHeat')->nullable();
@@ -27,6 +27,7 @@ class CreateOrdersTable extends Migration
             $table->string('BackImage');
             $table->string('InvoiceNumber')->unique();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
 
         });
 

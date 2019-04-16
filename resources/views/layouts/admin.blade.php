@@ -32,79 +32,19 @@
     <link href="{{asset('/assets/layouts/layout/css/layout-rtl.min.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('/assets/layouts/layout/css/themes/darkblue-rtl.min.css')}}" rel="stylesheet" type="text/css"
           id="style_color"/>
+    <link href="{{asset('/assets/one.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('/assets/two.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{asset('/assets/layouts/layout/css/custom-rtl.min.css')}}" rel="stylesheet" type="text/css"/>
     <style>
         @font-face {
             font-family: myFirstFont;
             src: url({{asset('/assets/iransans.ttf')}});
         }
+
         div {
             font-family: myFirstFont;
         }
     </style>
-
-
-    <style>
-
-        body
-        {
-            background-color:#f5f5f5;
-        }
-        .imagePreview {
-            width: 100%;
-            height: 180px;
-            background-position: center center;
-            background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
-            background-color:#fff;
-            background-size: cover;
-            background-repeat:no-repeat;
-            display: inline-block;
-            box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
-        }
-        .btn-primary
-        {
-            display:block;
-            border-radius:0px;
-            box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
-            margin-top:-5px;
-        }
-        .imgUp
-        {
-            margin-bottom:15px;
-        }
-        .del
-        {
-            position:absolute;
-            top:0px;
-            right:15px;
-            width:30px;
-            height:30px;
-            text-align:center;
-            line-height:30px;
-            background-color:rgba(255,255,255,0.6);
-            cursor:pointer;
-        }
-        .imgAdd
-        {
-            width:30px;
-            height:30px;
-            border-radius:50%;
-            background-color:#4bd7ef;
-            color:#fff;
-            box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
-            text-align:center;
-            line-height:30px;
-            margin-top:0px;
-            cursor:pointer;
-            font-size:15px;
-        }
-
-    </style>
-
-
-
-
-
 </head>
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
 <div class="page-wrapper">
@@ -273,12 +213,7 @@
                                 <a class="nav-link ">
                                     <span class="title" data-toggle="modal" href="#draggable">ثبت سفارش جدید</span>
 
-
-                                        {{--<a class="btn green btn-outline sbold" data-toggle="modal" href="#draggable"> View Demo </a>--}}
-
-
-
-
+                                    {{--<a class="btn green btn-outline sbold" data-toggle="modal" href="#draggable"> View Demo </a>--}}
                                 </a>
                             </li>
                             <li class="nav-item  ">
@@ -335,20 +270,27 @@
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="layout_offcanvas_mobile_menu.html" class="nav-link ">
+                                <a href="#" class="nav-link ">
                                     <span class="title">راهنما</span>
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="layout_classic_page_head.html" class="nav-link ">
-                                    <span class="title">خروج</span>
-                                </a>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    خروج </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
+                                    @csrf
+                                </form>
+
                             </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
+
         <div class="page-content-wrapper">
             <div class="page-content">
                 <div class="page-bar">
@@ -362,12 +304,9 @@
                     </ul>
 
                     <div class="page-toolbar">
-                    <br/>
+                        <br/>
                         <br/>
                         <span>{{Verta::instance(time())->format('Y-n-j')}}  امروز</span>
-
-
-
 
 
                     </div>
@@ -376,19 +315,11 @@
                 </div>
 
 
-
-
-
-
-
                 <br/>
 
 
-
-
-
-
-                <div class="modal fade draggable-modal" id="draggable" tabindex="-1" role="basic" aria-hidden="true" dir="rtl">
+                <div class="modal fade draggable-modal" id="draggable" tabindex="-1" role="basic" aria-hidden="true"
+                     dir="rtl">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -398,41 +329,32 @@
                             </div>
                             <div class="modal-body">
                                 <h4>
-                                1_کارهای که از شنبه تا چهار شنبه قبل از ساعت 12 پرداخت شود فوری می باشد.
-                                <br/>
-                                2_از چاپ سفارشاتی از قبیل فال،دعانویسی،چهره یا بدن خانم،تاتو،نصب آنتن ماهواره،دی جی،عکس افراد مشهور معذوریم و در صورت مشاهده کار عدم تایید می گردد و در صورت چاپ عواقب آن به عهده سفارش دهنده می باشد.
-<br/>
-                                3_کارهای ارسالی باید بصورت jpg cmyk و 300 dpi باشد.
-                                <br/>
-                                4_در کلیه کارهای چاپی بین 5 تا 10 درصد پرتی (خرابی چاپ،سلفون،برش) و 15 درصد اختلاف رنگ وجود دارد.
-                                <br/>
-                                5_فایل های بزرگتر از سایز a4 که در فرم های ویزیت چاپ میشوند مرجوعی ندارد.
-                                <br/>
-                                6_در کارهای چاپی زمینه مشکی باید 4 رنگ cmyk 100 و نوشته های مشکی فقط k100 باشد.
-                                <br/>
-                                7_ترام برای زمینه روشن حداقل 7 درصد و برای زمینه تمپلات حداقل اختلاف زمینه و ترام 30 درصد باید باشد.
-                                <br/>
-                                8_فاصله برش از لبه کار برای ویزیت حداقل 3 میلیمتر و برای لمینت و یووی برجسته،گلاسه و تحریر 5 میلیمتر باشد.
-                                <br/>
-                                9_در کارهای برجسته جوش زدگی در قسمت های تمپلات و یووی نخوردن قسمت های ریز بر عهده مشتری می باشد.
-
-
-
-
-
-
+                                    1_کارهای که از شنبه تا چهار شنبه قبل از ساعت 12 پرداخت شود فوری می باشد.
+                                    <br/>
+                                    2_از چاپ سفارشاتی از قبیل فال،دعانویسی،چهره یا بدن خانم،تاتو،نصب آنتن ماهواره،دی
+                                    جی،عکس افراد مشهور معذوریم و در صورت مشاهده کار عدم تایید می گردد و در صورت چاپ
+                                    عواقب آن به عهده سفارش دهنده می باشد.
+                                    <br/>
+                                    3_کارهای ارسالی باید بصورت jpg cmyk و 300 dpi باشد.
+                                    <br/>
+                                    4_در کلیه کارهای چاپی بین 5 تا 10 درصد پرتی (خرابی چاپ،سلفون،برش) و 15 درصد اختلاف
+                                    رنگ وجود دارد.
+                                    <br/>
+                                    5_فایل های بزرگتر از سایز a4 که در فرم های ویزیت چاپ میشوند مرجوعی ندارد.
+                                    <br/>
+                                    6_در کارهای چاپی زمینه مشکی باید 4 رنگ cmyk 100 و نوشته های مشکی فقط k100 باشد.
+                                    <br/>
+                                    7_ترام برای زمینه روشن حداقل 7 درصد و برای زمینه تمپلات حداقل اختلاف زمینه و ترام 30
+                                    درصد باید باشد.
+                                    <br/>
+                                    8_فاصله برش از لبه کار برای ویزیت حداقل 3 میلیمتر و برای لمینت و یووی برجسته،گلاسه و
+                                    تحریر 5 میلیمتر باشد.
+                                    <br/>
+                                    9_در کارهای برجسته جوش زدگی در قسمت های تمپلات و یووی نخوردن قسمت های ریز بر عهده
+                                    مشتری می باشد.
 
 
                                 </h4>
-
-
-
-
-
-
-
-
-
 
 
                             </div>
@@ -447,9 +369,7 @@
                 </div>
 
 
-
                 @yield('form')
-
 
 
                 <div class="clearfix"></div>
@@ -459,14 +379,15 @@
             <i class="icon-login"></i>
         </a>
     </div>
+
     <div class="page-footer">
         <div class="page-footer-inner">
-            <a target="_blank" href="http://keenthemes.com">صفحه نخست</a> &nbsp;|&nbsp;
-            <a target="_blank" href="http://keenthemes.com">وبلاگ</a> &nbsp;|&nbsp;
-            <a target="_blank" href="http://keenthemes.com">راهنما</a> &nbsp;|&nbsp;
-            <a target="_blank" href="http://keenthemes.com">درباره ما</a> &nbsp;|&nbsp;
-            <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes"
-               title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">تماس با ما</a>
+            <a target="_blank" href="">صفحه نخست</a> &nbsp;|&nbsp;
+            <a target="_blank" href="">وبلاگ</a> &nbsp;|&nbsp;
+            <a target="_blank" href="">راهنما</a> &nbsp;|&nbsp;
+            <a target="_blank" href="">درباره ما</a> &nbsp;|&nbsp;
+            <a href=""
+               title="" target="_blank">تماس با ما</a>
         </div>
         <div class="scroll-to-top">
             <i class="icon-arrow-up"></i>
@@ -529,55 +450,8 @@
 <script src="{{asset('/assets/layouts/layout/scripts/demo.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('/assets/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('/assets/layouts/global/scripts/quick-nav.min.js')}}" type="text/javascript"></script>
-<script>
-    $(".imgAdd").click(function(){
-        $(this).closest(".row").find('.imgAdd').before('<div class="col-sm-2 imgUp"><div class="imagePreview"></div><label class="btn btn-primary">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
-    });
-    $(document).on("click", "i.del" , function() {
-        $(this).parent().remove();
-    });
-    $(function() {
-        $(document).on("change",".uploadFile", function()
-        {
-            var uploadFile = $(this);
-            var files = !!this.files ? this.files : [];
-            if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
-
-            if (/^image/.test( files[0].type)){ // only image file
-                var reader = new FileReader(); // instance of the FileReader
-                reader.readAsDataURL(files[0]); // read the local file
-
-                reader.onloadend = function(){ // set image data as background of div
-                    //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
-                    uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
-                }
-            }
-
-        });
-    });
-</script>
-
-<script>
-    function myFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
-
+<script src="{{asset('/assets/one.js')}}" type="text/javascript"></script>
+<script src="{{asset('/assets/two.js')}}" type="text/javascript"></script>
 
 
 </body>

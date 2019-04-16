@@ -35,7 +35,7 @@ class OrdersController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Orders $orders)
     {
         $InvoiceNumber = rand(0001, 999999);
         $file = $request->file('FrontImage');
@@ -57,6 +57,9 @@ class OrdersController extends Controller
             'FrontImage' => $FrontImage,
             'BackImage' => $BackImage,
             'InvoiceNumber' => $InvoiceNumber,
+//            $user = new User,
+//            $user->user_id = $request->user_id,
+//            $orders->users()->save($user),
 
         ]);
         session()->flash('alert', 'سفارش شما با موفقیت ثبت شد');

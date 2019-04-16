@@ -14,7 +14,7 @@ class Orders extends Model
 
     public function users()
     {
-        return $this->belongsTo(User::class,'user_id');
+        return $this->belongsTo(User::class,'id');
 
 
     }

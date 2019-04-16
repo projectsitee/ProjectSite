@@ -3,12 +3,9 @@
     <h4>فهرست سفارشات ارسال شده</h4>
     <hr>
     <div class="portlet box blue ">
-
         <div class="portlet-body form ">
-
             <div class="form-body ">
                 <br/>
-
                 <table class="table table-hover table-bordered results">
                     <thead>
                     <tr>
@@ -24,12 +21,10 @@
                         <th>شهرستان</th>
                         <th>تاریخ درخواست</th>
                     </tr>
-
                     </thead>
                     <tbody>
                     {{--@foreach($order as $orde)--}}
                     {{--@if($orde->user_id == auth()->user()->id)--}}
-
                     <tr>
                         <td></td>
                         <td></td>
@@ -43,23 +38,9 @@
                         <td></td>
                         <td></td>
                     </tr>
-
                     </tbody>
-
                 </table>
-
-                <!-- END EXAMPLE TABLE PORTLET-->
-
-
-                <!-- BEGIN EXAMPLE TABLE PORTLET-->
-
             </div>
         </div>
-
     </div>
-
-
-
-
-
 @endsection

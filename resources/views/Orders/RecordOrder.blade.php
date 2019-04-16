@@ -10,7 +10,6 @@
     @endif
     <div class="row">
         <div class="col-md-12">
-            <!-- BEGIN VALIDATION STATES-->
             <div class="portlet light portlet-fit portlet-form bordered">
                 <div class="portlet-title">
                     <div class="caption">
@@ -19,7 +18,6 @@
                     </div>
                 </div>
                 <div class="portlet-body">
-                    <!-- BEGIN FORM-->
                     <form action="{{url('/Order')}}" method="post" id="form_sample_1" class="form-horizontal"
                           enctype="multipart/form-data">
                         {{csrf_field()}}
@@ -68,8 +66,6 @@
                                               placeholder=""></textarea>
                                 </div>
                             </div>
-
-
                             <div class="form-group">
                                 <label class="control-label col-md-3">اندازه
                                     <span class="required"></span>
@@ -94,7 +90,6 @@
                                     </select>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <label class="control-label col-md-3">توضیحات دیگر
                                     <span class="required"></span>
@@ -117,8 +112,6 @@
                             <span class="title" style="color:red;">تصویر با پسند .jpg  مورد قبول است.</span>
                             <br/>
                             <br/>
-
-
                             <div class="col-sm-2 imgUp">
                                 <div class="imagePreview"></div>
                                 <label class="btn btn-primary">
@@ -135,24 +128,18 @@
                                                                style="width: 0px;height: 0px;overflow: hidden;">
                                 </label>
                             </div>
-
                         </div>
                         <div class="form-actions">
                             <div class="row">
                                 <div class="col-md-offset-3 col-md-9">
                                     <button type="submit" class="btn green">ثبت اطلاعات</button>
-
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <!-- END FORM-->
+
                 </div>
             </div>
-            <!-- END VALIDATION STATES-->
         </div>
     </div>
-
-
-
 @endsection

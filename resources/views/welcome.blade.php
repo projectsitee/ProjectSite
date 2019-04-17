@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <title>عنوان سایت</title>
+    <title>آق کیا پرینت</title>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta content="telephone=no" name="format-detection"/>
     <meta name="HandheldFriendly" content="true"/>
     <link rel="stylesheet" href="{{asset('/assets/css/master.css')}}"/>
+    <link rel="icon" type="image/png" href="{{asset('/icon/icons8-p-50.png')}}" />
 </head>
 <body>
 <div class="b-page-wrap">
@@ -43,7 +44,8 @@
     <!-- ==========================-->
     <!-- MOBILE MENU-->
     <!-- ==========================-->
-    <div data-off-canvas="mobile-slidebar left overlay"><a href="#" class="navbar-brand scroll"><img src="assets/media/general/logo-white.png" alt="logo" class="normal-logo"/>عنوان سایت</a>
+    <div data-off-canvas="mobile-slidebar left overlay" dir="rtl"><a href="#" class="navbar-brand scroll"><img
+                    src="{{asset('/icon/Logo-Design-Juicymedia-1-3.png')}}" alt="logo" class="normal-logo"/>آق کیا پرینت</a>
         <ul class="nav navbar-nav">
             <li><a href="#">تماس با ما</a></li>
 
@@ -59,12 +61,15 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
                     <div class="b-logo">
-                        <a href="#">
-                            <img src="assets/media/general/logo-white.png" alt="/">
-                            <span class="logo-title">
-                                                                                        عنوان سایت
-                                                                                    </span>
-                        </a>
+                        <div class="b-socials">
+                            <ul class="list-inline">
+                                <li class="search-toogle">
+                                    <a href="#" class="btn_header_search">
+                                        <i class="fa fa-search fa-fw" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- Mobile Trigger Start-->
                     <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button"><i
@@ -77,10 +82,7 @@
                         <nav id="nav" class="navbar">
                             <ul class="yamm main-menu nav navbar-nav hidden-xs">
                                 <li>
-                                    <a href="#">نماس با ما</a>
-                                </li>
-                                <li>
-                                    <a href="#">اطلاعیه ها</a>
+                                    <a href="#">تماس با ما</a>
                                 </li>
                                 <li>
                                     <a href="#">شماره حساب ها</a>
@@ -97,20 +99,18 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
-                    <div class="b-socials">
-                        <ul class="list-inline">
-                            <li class="search-toogle">
-                                <a href="#" class="btn_header_search">
-                                    <i class="fa fa-search fa-fw" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+
+                    <a href="#">
+                        <img src="{{asset('/icon/Logo-Design-Juicymedia-1-2.png')}}" height="25">
+
+                    </a>
+
 
                 </div>
             </div>
         </div>
     </header>
+
 
     <div class="b-page-content with-layer-bg">
         <!-- ==========================-->
@@ -121,15 +121,23 @@
                 <div class="layer-content-big">
                     <!-- Home slider -->
                     <div class="b-home-slider-holder wow slideInUp">
-                        <div class="b-home-slider"
-                             data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "fade": true, "speed": 1000, "autoplay": true}'>
+                        <div class="b-home-slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "fade": true, "speed": 1000, "autoplay": true}'>
                             <!-- Home slide 1 -->
                             <div class="home-slide">
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 text-center">
                                             <div class="b-home-slider-content">
-
+                                                <h2 class="main-heading">
+                                                    Creative. Multipurpose. Colorful.
+                                                </h2>
+                                                <div class="home-slider-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus
+                                                    <br>
+                                                    vitae condimentum egestas, libero dolor auctor tellus
+                                                </div>
+                                                <a href="about-1.html" class="btn btn-secondary">Read More</a>
+                                                <a href="service-2.html" class="btn btn-secondary">Sign Up</a>
                                             </div>
                                         </div>
                                     </div>
@@ -141,19 +149,51 @@
                                     <div class="row">
                                         <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 text-center">
                                             <div class="b-home-slider-content">
-
+                                                <h2 class="main-heading">
+                                                    At vero eos et
+                                                </h2>
+                                                <div class="home-slider-text">
+                                                    Et harum quidem rerum facilis est et expedita ut aut reiciendis voluptatibus maiores alias consequatur
+                                                    <br>
+                                                    Itaque earum rerum hic tenetur a sapiente delectus, aut perferendis doloribus
+                                                    <br>
+                                                    perferendis doloribus asperiores repellat asperiores repellat. Nam libero tempore, cum soluta nobis est eligendi
+                                                </div>
+                                                <a href="about-1.html" class="btn btn-secondary">Read More</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+                            <div class="home-slide">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 text-center">
+                                            <div class="b-home-slider-content">
+                                                <h2 class="main-heading">
+                                                   1
+                                                </h2>
+                                                <div class="home-slider-text">
+                                                   2
+                                                </div>
+                                                <a href="about-1.html" class="btn btn-secondary">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
                         </div>
                         <div class="b-slick-arrows">
                             <div class="custom-slideshow-controls">
-                                <span id="home-slider-prev" class="slick-arrows-prev arrow-transparent"><i
-                                            class="fa fa-angle-left" aria-hidden="true"></i></span>
-                                <span id="home-slider-next" class="slick-arrows-next arrow-transparent"><i
-                                            class="fa fa-angle-right" aria-hidden="true"></i></span>
+                                <span id="home-slider-prev" class="slick-arrows-prev arrow-transparent"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                                <span id="home-slider-next" class="slick-arrows-next arrow-transparent"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
                             </div>
                         </div>
                     </div>
@@ -203,7 +243,8 @@
 
                             </div>
                             <div class="login-div col-lg-3 col-md-3 col-sm-6">
-                                <h3 style="color: #C0C0C0">ورود مشتریان</h3>
+                                <h2 style="color: #8f8f8f">ورود مشتریان</h2>
+                                <hr/>
                                 <form method="post" role="form" action="{{ route('login') }}">
                                     @csrf
                                     <div class="form-group has-feedback">
@@ -232,19 +273,18 @@
                                                                     type="checkbox"
                                                                     name="ctl00$MainContent$ctlUserLogin$chkRemember"/><label
                                                                     for="MainContent_ctlUserLogin_chkRemember">مرا به خاطر بسپار</label></span>
-                                        <br/>
-                                        <a href="Account/ForgotPassword.aspx">
-                                            <small>کلمه عبور را فراموش کردید ؟</small>
-                                        </a>
-                                        <br/>
-                                        <span id="MainContent_ctlUserLogin_FailureText" class="lbl"
-                                              style="color:Red;"></span>
-                                        <br/>
+
+
+
                                     </div>
+                                    <hr/>
 
 
-                                    <button class="btn btn-primary" style="color:red;">وارد شوید>></button>
-                                    <a href="{{url('/register')}}" class="btn btn-primary" style="color:red;">عضو شوید</a>
+
+                                    <button class="btn btn-primary" style="font-size: 10px;color:red;">وارد شوید>></button>
+                                    <a href="{{url('/register')}}" class="btn btn-primary" style="color:red;">عضو
+                                        شوید</a>
+                                    <hr/>
 
 
                                 </form>
@@ -262,7 +302,8 @@
         </div>
     </div>
 </div>
-
+<br/>
+<br/>
 <footer>
     <div class="b-footer-content">
         <div class="container">
@@ -290,7 +331,7 @@
                     <p>چاپ ما با افتخار اعلام میدارد که مجوز های مربوطه و افتخارات لازمه را در زمینه فعالیت خود کسب
                         کرده است</p>
                     <div class="trust">
-                        <img src="{{asset('/img/logo-mellat.png')}}" width="80px"/>
+                        <img src="{{asset('/img/logo-mellat.png')}}" width="80px" id="end"/>
                         <img src="{{asset('/img/BPMLogo.png')}}" width="80px">
                         <img src="{{asset('/img/logo3.jpg')}}" width="80px">
                     </div>
